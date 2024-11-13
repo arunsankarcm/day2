@@ -1,0 +1,10 @@
+<div class="districts">
+  @for (item of cardCollection; track item.title; ) {
+    <app-cards
+      title="{{ item.title }}"
+      description="{{ item.desc }}"
+      image="{{ item.image }}"
+    ></app-cards>
+
+    }
+</div>
