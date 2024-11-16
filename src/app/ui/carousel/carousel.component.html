@@ -3,7 +3,7 @@
     <div class="carousel-inner">
       @for (item of carousel; track item.id; let i = $index) {
         <div class="carousel-item" [class.active]="isActive(i)">
-          <img [src]="item.image" class="d-block w-100" [alt]="'Slide ' + (i + 1)" />
+          <img src={{item.image}} class="d-block w-100" [alt]="'Slide ' + (i + 1)" />
         </div>
       }
     </div>

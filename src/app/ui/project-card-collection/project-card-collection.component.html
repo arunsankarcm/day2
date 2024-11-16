@@ -1,0 +1,5 @@
+<div class="projects" id="projects">
+  @for (item of projectCardCollection; track item.title;) {
+    <app-project-cards [data]="item"></app-project-cards>
+  }
+</div>

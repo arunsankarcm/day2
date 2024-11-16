@@ -1,0 +1,6 @@
+.districts{
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  padding-left: 70px;
+  gap: 30px;
+}

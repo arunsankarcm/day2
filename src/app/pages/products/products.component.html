@@ -1,0 +1,6 @@
+<div class="container">
+  @for(cat of categories;track cat){
+      <h1>{{cat}}</h1>
+      <app-product-carousel [category]='cat' ></app-product-carousel>
+  }
+</div>

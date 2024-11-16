@@ -1,0 +1,41 @@
+/* Navbar Styling */
+nav {
+  background-color: #004aad;
+  padding: 15px 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav li:hover {
+  color: #f4f4f9;
+}
+
+nav li.active {
+  border-bottom: 2px solid #f4f4f9;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin-bottom: 10px;
+  }
+}

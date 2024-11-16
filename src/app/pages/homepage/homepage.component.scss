@@ -1,7 +1,137 @@
-p{
-  padding: 20px;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f9;
+  color: #333;
 }
 
-h1{
-  padding: 23px;
+/* General Styling */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Header Styling */
+.header-div {
+  background-color: #004aad;
+  padding: 10px 0;
+}
+
+.header {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+.header li {
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.header li:hover {
+  text-decoration: underline;
+}
+
+/* Intro Section */
+.intro-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 10%;
+}
+
+.intro-text {
+  max-width: 50%;
+}
+
+.intro-text h1 {
+  font-size: 2.5rem;
+  color: #004aad;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social-icons .icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.intro-div img {
+  width: 250px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+.about {
+  padding: 50px 10%;
+  background-color: #eaf2f8;
+  text-align: center;
+}
+
+.about-pic img {
+  width: 60%;
+  max-width: 400px;
+  margin: 20px auto;
+  display: block;
+}
+
+.about p {
+  margin-top: 20px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 10%;
+  background-color: #dceefb;
+}
+
+.contact-details {
+  margin-bottom: 20px;
+}
+
+.contact-details input,
+.contact-details textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-details button {
+  background-color: #004aad;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-details button:hover {
+  background-color: #00347a;
+}
+
+/* Footer */
+.footer-line {
+  background-color: #004aad;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9rem;
 }

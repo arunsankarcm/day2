@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CardsComponent } from '../cards/cards.component';
+import { BootstrapCard } from '../../interface/bootsrap.interface';
 
 @Component({
   selector: 'app-card-collection',
@@ -9,7 +10,7 @@ import { CardsComponent } from '../cards/cards.component';
   styleUrl: './card-collection.component.scss',
 })
 export class CardCollectionComponent {
-  cardCollection = [
+  cardCollection: BootstrapCard[] = [
     {
       title: 'Thiruvananthapuram',
       image: 'images/trivandrum.jpg',

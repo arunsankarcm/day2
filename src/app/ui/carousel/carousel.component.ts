@@ -1,13 +1,16 @@
-// carousel.component.ts
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
+
 
 @Component({
   selector: 'app-carousel',
   standalone: true,
-  imports: [CommonModule],  // Required for ngFor and other common directives
+  imports: [CommonModule, BrowserAnimationsModule, CarouselModule],
   templateUrl: './carousel.component.html',
-  styleUrl: './carousel.component.scss'
+  styleUrl: './carousel.component.scss',
 })
 export class CarouselComponent {
   carousel = [
@@ -23,7 +26,8 @@ export class CarouselComponent {
   }
 
   previous() {
-    this.currentIndex = (this.currentIndex - 1 + this.carousel.length) % this.carousel.length;
+    this.currentIndex =
+      (this.currentIndex - 1 + this.carousel.length) % this.carousel.length;
   }
 
   isActive(index: number): boolean {
